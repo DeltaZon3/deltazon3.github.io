@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fast Food Survey Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">          
+    </head>
+     <body>
+        <div class="container">
+            <header>
+                <h1 id="title" class="text-center">Fast Food Survey Form</h1>
+                <p id="description" class="text-center">Please let us know about your favorite fast food franchise</p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input 
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Enter your name"
+                        required
+                    />                    
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        id="email"
+                        class="form-control"
+                        placeholder="Enter your Email" 
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label">Age 
+                        <span class="clue">(optional)</span></label
+                    >
+                    <input 
+                        type="number" 
+                        name="age" 
+                        id="number"
+                        min="18"
+                        max="99"
+                        class="form-control"
+                        placeholder="Age"
+                    />
+                </div>
+                
+                <div class="form-group">
+                    <p>How many times a year do you visit a fast food franchise?</p>
+                    <select name="visit" id="dropdown" class="form-control" required>
+                        <option disabled selected value>Select amount of visits(per year)</option>
+                        <option value="nine">Less than or equal to 9</option>
+                        <option value="ten">More than 10</option>
+                        <option value="twenty-five">More than 25</option>
+                        <option value="fifty">More than 50</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>
+                        Which franchises have you visited in the past year?
+                        <span class="clue">(Check all that apply)</span>
+                    </p>
+
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="past-visit"
+                            class="input-checkbox" 
+                            value="mcdonalds"
+                        />McDonald's</label
+                    >
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="past-visit"
+                            class="input-checkbox" 
+                            value="burger-king"
+                        />Burger King</label
+                    >
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="past-visit"
+                            class="input-checkbox" 
+                            value="wendys"
+                        />Wendy's</label
+                    >
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="past-visit"
+                            class="input-checkbox" 
+                            value="taco-bell"
+                        />Taco Bell</label
+                    >
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="past-visit"
+                            class="input-checkbox" 
+                            value="kfc"
+                        />KFC</label
+                    >
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="past-visit"
+                            class="input-checkbox" 
+                            value="subway"
+                        />Subway</label
+                    >
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="past-visit"
+                            class="input-checkbox" 
+                            value="chick-fil-a"
+                        />Chick-fil-A</label
+                    >
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="past-visit"
+                            class="input-checkbox" 
+                            value="dominos"
+                        />Domino's</label
+                    >
+                    <label>
+                        <input 
+                            type="checkbox"
+                            name="past-visit"
+                            class="input-checkbox"
+                            value="other"
+                        />Other</label
+                    >
+                    <textarea 
+                        name="other-franchise" 
+                        id="suggestions"
+                        class="input-textarea"
+                        placeholder="Other franchises here..."
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <p>Wendy's has better food than Burger King: </p>
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="user-preference" 
+                            class="input-radio"
+                            value="definitely"
+                            checked
+                        />Definitely</label
+                    >
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="user-preference" 
+                            class="input-radio"
+                            value="maybe"
+                        />Maybe</label
+                    >
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="user-preference" 
+                            class="input-radio"
+                            value="not-sure"
+                        />Not Sure</label
+                    >
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
